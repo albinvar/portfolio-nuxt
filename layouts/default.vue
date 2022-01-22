@@ -106,7 +106,7 @@
         </div>
       </div>
     </div>
-    <router-view />
+    <Nuxt />
     <Footer />
   </div>
 </template>
