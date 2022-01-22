@@ -1,5 +1,7 @@
 <template>
-  <HeroComponent />
+  <div>
+    <HeroComponent />
+  </div>
 </template>
 
 <script>
