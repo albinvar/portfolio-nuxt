@@ -4,10 +4,8 @@
 
 <script>
 export default {
-  name: 'ResumePage'
+  name: 'ResumePage',
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

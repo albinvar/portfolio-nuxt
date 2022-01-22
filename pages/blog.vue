@@ -4,10 +4,8 @@
 
 <script>
 export default {
-  name: 'BlogPage'
+  name: 'BlogPage',
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

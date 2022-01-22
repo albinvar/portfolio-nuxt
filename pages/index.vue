@@ -5,10 +5,10 @@
 <script>
 export default {
   name: 'IndexPage',
-  head () {
+  head() {
     return {
       title: 'Albin Varghese',
     }
-  }
+  },
 }
 </script>
