@@ -58,7 +58,7 @@
         </div>
       </div>
       <div
-        v-for="item in items"
+        v-for="item in navbarItems"
         :key="item.id"
         class="px-2 pt-2 pb-3 space-y-1"
       >
@@ -82,18 +82,17 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'NavbarComponent',
-  // eslint-disable-next-line vue/require-prop-types
-  props: ['items'],
+
+  computed: {
+    ...mapState(['navbarItems']),
+  },
 
   methods: {
-    ...mapMutations([
-      // 'showNavbar',
-      'hideNavbar',
-    ]),
+    ...mapMutations(['hideNavbar']),
   },
 }
 </script>

@@ -1,5 +1,4 @@
 <template>
-  <!-- This example requires Tailwind CSS v2.0+ -->
   <div class="relative bg-white h-screen">
     <div class="mx-auto">
       <div
@@ -68,7 +67,7 @@
                 </div>
               </div>
               <div
-                v-for="item in items"
+                v-for="item in navbarItems"
                 :key="item.id"
                 class="hidden md:block md:ml-10 md:pr-4 md:space-x-8 lg:block lg:ml-10 lg:pr-4 lg:space-x-8"
               >
@@ -101,7 +100,7 @@
             leave-from-class="opacity-100 scale-100"
             leave-to-class="opacity-0 scale-95"
           >
-            <NavbarComponent :items="items" />
+            <NavbarComponent />
           </transition>
         </div>
       </div>
@@ -119,18 +118,11 @@ export default {
   data() {
     return {
       // navbarStatus: this.$store.state.navbarStatus,
-      items: [
-        { link: '/', name: 'Home', isMain: false },
-        { link: '/resume', name: 'Resume', isMain: false },
-        { link: '/blog', name: 'Blog', isMain: false },
-        { link: '/followers', name: 'Followers', isMain: false },
-        { link: '/contact', name: 'Contact', isMain: true },
-      ],
     }
   },
 
   computed: {
-    ...mapState(['navbarStatus']),
+    ...mapState(['navbarStatus', 'navbarItems']),
   },
 
   methods: {
