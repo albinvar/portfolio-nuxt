@@ -12,13 +12,16 @@
             <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
               <div class="flex items-center flex-grow flex-shrink-0">
                 <div class="flex items-center justify-between w-full md:w-auto">
-                  <NuxtLink to="/" @click="closeNavbar">
+                  <NuxtLink to="/">
                     <span class="sr-only">Workflow</span>
                     <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt='logo'>
                   </NuxtLink>
                   <span class="lg:pl-4 text-xl text-gray-500 font-bold animate__animated animate__jackInTheBox animate__delay-1s">Albin Varghese</span>
                   <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" @click="toggleShowNavbar" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <button
+                    type="button"  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" @click="() => {
+                showNavbar()
+              }" aria-expanded="false">
                       <span class="sr-only">Open main menu</span>
                       <!-- Heroicon name: outline/menu -->
                       <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -43,8 +46,8 @@
               From: "opacity-100 scale-100"
               To: "opacity-0 scale-95"
           -->
-          <transition name="fade" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
-            <NavbarComponent :show="show" :items="items" @close="toggleShowNavbar"/>
+          <transition v-if='navbarStatus' name="fade" enter-from-class="opacity-0 scale-95" enter-to-class="opacity-100 scale-100" leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
+            <NavbarComponent :items="items"/>
           </transition>
         </div>
 
@@ -56,11 +59,13 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from "vuex"
+
 export default {
   name: 'App',
   data() {
     return {
-      show: false,
+      // navbarStatus: this.$store.state.navbarStatus,
       items: [
         { link: '/', name: "Home", isMain: false },
         { link: '/resume', name: "Resume", isMain: false },
@@ -71,14 +76,16 @@ export default {
     }
   },
 
-  methods: {
-    toggleShowNavbar() {
-      this.show = !this.show
-    },
+  computed: {
+    ...mapState([
+      'navbarStatus'
+    ])
+  },
 
-    closeNavbar() {
-      this.show = false
-    }
+  methods: {
+    ...mapMutations([
+      'showNavbar',
+    ])
   }
 }
 </script>

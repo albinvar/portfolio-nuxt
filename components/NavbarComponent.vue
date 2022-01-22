@@ -1,26 +1,33 @@
 <template>
     <div
       class="h-screen absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-      @click.self="closeNavbar"
+      @click.self="() => {
+                hideNavbar()
+              }"
     >
+
       <div
         class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
       >
         <div class="px-5 pt-4 flex items-center justify-between">
           <div>
-            <router-link to="/" @click="closeNavbar">
+            <NuxtLink to="/" @click.native="() => {
+                hideNavbar()
+              }">
               <img
                 class="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt=""
               />
-            </router-link>
+            </NuxtLink>
           </div>
           <div class="-mr-2">
             <button
               type="button"
               class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-              @click="closeNavbar"
+              @click="() => {
+                hideNavbar()
+              }"
             >
               <span class="sr-only">Close main menu</span>
               <!-- Heroicon name: outline/x -->
@@ -54,7 +61,9 @@
               'w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-100 hover:bg-gray-200':
                 item.isMain,
             }"
-            @click="closeNavbar"
+            @click.native="() => {
+                hideNavbar()
+              }"
             >{{ item.name }}</NuxtLink
           >
         </div>
@@ -63,14 +72,20 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   name: 'NavbarComponent',
   // eslint-disable-next-line vue/require-prop-types
-  props: ['show', 'items'],
+  props: ['items'],
+
   methods: {
-    closeNavbar() {
-      this.$emit('close')
-    },
-  },
+
+    ...mapMutations([
+      // 'showNavbar',
+      'hideNavbar'
+    ])
+
+  }
 }
 </script>
