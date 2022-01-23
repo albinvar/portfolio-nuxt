@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-white py-3 lg:py-20">
+    <section class="bg-white dark:bg-gray-800 py-3 lg:py-20">
       <div class="flex items-end justify-center my-6" @click="animate">
         <img
           :class="{ animate__jackInTheBox: animated }"
@@ -12,13 +12,15 @@
       </div>
       <div class="max-w-2xl px-6 text-center mx-auto">
         <h2
-          class="text-3xl font-semibold text-gray-800 animate__animated animate__slideInLeft"
+          class="text-3xl font-semibold text-gray-800 dark:text-gray-100 animate__animated animate__slideInLeft"
         >
           Hi,
           <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span> .
           Nice to meet you.
         </h2>
-        <p class="text-gray-600 mt-4 animate__animated animate__fadeInUp">
+        <p
+          class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
+        >
           A Higher Secondary Student having passion for Web Development &
           Ethical Hacking. I have pretty good exposure in Editorial Works
           Photography, Video Editing and so on
@@ -34,7 +36,7 @@
           data-tippy-content="@albin.varghese.395017"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +53,7 @@
           data-tippy-content="@AlbinVa73331234"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +70,7 @@
           data-tippy-content="@albinvar"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +87,7 @@
           data-tippy-content="@albinvar"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +104,7 @@
           data-tippy-content="@albinvar"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +121,7 @@
           data-tippy-content="@android_exploiter"
         >
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +134,7 @@
         </a>
         <a class="link" href="#" data-tippy-content="@unavailable">
           <svg
-            class="h-6 fill-current text-gray-600 hover:text-teal-700"
+            class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

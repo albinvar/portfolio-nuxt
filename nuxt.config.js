@@ -18,7 +18,7 @@ export default {
   css: ['animate.css/animate.min.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "~/plugins/aos", ssr: false }],
+  plugins: [{ src: '~/plugins/aos', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
@@ -31,6 +31,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg',
+    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,4 +58,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  colorMode: {
+    classSuffix: '',
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+  },
 }

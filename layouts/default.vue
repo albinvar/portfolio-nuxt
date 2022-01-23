@@ -1,19 +1,9 @@
 <template>
-  <div class="relative bg-white h-screen">
+  <div class="relative min-h-screen bg-white dark:bg-gray-800">
     <div class="mx-auto">
       <div
-        class="relative z-10 pb-4 bg-white sm:pb-16 md:pb-6 lg:w-full shadow-lg rounded-b-3xl animate__animated animate__slideInDown"
+        class="relative z-10 pb-4 bg-white dark:bg-gray-900 sm:pb-16 md:pb-6 lg:w-full shadow-lg rounded-b-3xl animate__animated animate__slideInDown"
       >
-        <svg
-          class="hidden lg:block absolute h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
-
         <div>
           <div class="relative pt-4 px-4 sm:px-6 lg:px-8">
             <nav
@@ -31,13 +21,16 @@
                     />
                   </NuxtLink>
                   <span
-                    class="lg:pl-4 text-xl text-gray-500 font-bold animate__animated animate__jackInTheBox animate__delay-1s"
+                    class="lg:pl-4 text-xl text-gray-500 dark:text-gray-200 font-bold animate__animated animate__jackInTheBox animate__delay-1s"
                     >Albin Varghese</span
                   >
+
                   <div class="-mr-2 flex items-center md:hidden">
+                    <ColorModePicker class="block md:hidden mr-6" />
+
                     <button
                       type="button"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      class="bg-white dark:bg-gray-700 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                       aria-expanded="false"
                       @click="
                         () => {
@@ -73,13 +66,15 @@
               >
                 <NuxtLink
                   :to="item.link"
-                  class="font-medium text-gray-500 hover:text-gray-900"
+                  class="font-medium text-gray-500 dark:text-gray-100 hover:text-gray-900"
                   :class="{
                     'text-indigo-600 hover:text-indigo-500': item.isMain,
                   }"
                   >{{ item.name }}</NuxtLink
                 >
               </div>
+
+              <ColorModePicker class="hidden md:block ml-4" />
             </nav>
           </div>
 
@@ -93,20 +88,18 @@
               To: "opacity-0 scale-95"
           -->
           <transition
-            v-if="navbarStatus"
             name="fade"
             enter-from-class="opacity-0 scale-95"
             enter-to-class="opacity-100 scale-100"
             leave-from-class="opacity-100 scale-100"
             leave-to-class="opacity-0 scale-95"
           >
-            <NavbarComponent />
+            <NavbarComponent v-if="navbarStatus" />
           </transition>
         </div>
       </div>
     </div>
     <Nuxt />
-    <Footer />
   </div>
 </template>
 
@@ -130,3 +123,20 @@ export default {
   },
 }
 </script>
+<style>
+app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
