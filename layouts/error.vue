@@ -16,6 +16,12 @@ export default {
   name: 'ErrorLayout',
   components: { UnknownErrorComponent, NotFoundComponent },
   props: ['error'],
-  layout: 'error' // you can set a custom layout for the error page
+  layout: 'error',// you can set a custom layout for the error page
+
+  head() {
+    return {
+      title: `Whoops, a ${this.error.statusCode} error `,
+    }
+  }
 }
 </script>
