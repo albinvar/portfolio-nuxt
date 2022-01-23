@@ -26,8 +26,7 @@
                   >
 
                   <div class="-mr-2 flex items-center md:hidden">
-
-                    <ColorModePicker class='block md:hidden mr-6' />
+                    <ColorModePicker class="block md:hidden mr-6" />
 
                     <button
                       type="button"
@@ -75,7 +74,7 @@
                 >
               </div>
 
-              <ColorModePicker class='hidden md:block ml-4' />
+              <ColorModePicker class="hidden md:block ml-4" />
             </nav>
           </div>
 
@@ -133,8 +132,9 @@ app {
   color: #2c3e50;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
