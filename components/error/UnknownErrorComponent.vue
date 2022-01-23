@@ -4,7 +4,7 @@
       <object :data='ErrorSvg' type='image/svg+xml' class='my-3 mx-auto w-1/2 md:w-1/3'></object>
       <h3 class="my-8 text-xl font-semibold">A {{ error.statusCode}} error occurred</h3>
 
-      <h5 class="mt-40 text-base font-normal">Return to <NuxtLink to='/' class='text-blue-600'> home page</NuxtLink></h5>
+      <h5 class="mt-28 text-base font-normal">Return to <NuxtLink to='/' class='text-blue-600'> home page</NuxtLink></h5>
     </div>
 
   </main>
