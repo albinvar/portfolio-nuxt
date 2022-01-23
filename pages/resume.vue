@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-xl text-left p-8 mx-auto">
+<div class='mx-4 flex flex-wrap'>
+  <div class="lg:w-1/2 text-left p-8">
     <div class="flow-root">
       <ul class="mb-8">
         <li v-for="event in timelineEvents" :key='event.id'>
@@ -36,10 +37,14 @@
             </div>
           </div>
         </li>
-
       </ul>
     </div>
   </div>
+  <div class='w-1/3 md:w-1/2 text-left p-8'>
+    <object :data='CareerSvg' type='image/svg+xml' class='my-3 mx-auto my-8 md:my-40 max-w-sm'></object>
+    <object :data='RocketSvg' type='image/svg+xml' class='hidden md:block my-3 mx-auto my-40 max-w-sm'></object>
+  </div>
+</div>
 </template>
 <script>
 export default {
@@ -51,6 +56,8 @@ export default {
   },
   data() {
     return {
+      CareerSvg: require('~/assets/illustrations/progress.svg'),
+      RocketSvg: require('~/assets/illustrations/404.svg'),
       timelineEvents: [
         {id: 1, title: 'Started learning PHP', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
         {id: 2, title: 'Started learning Node Js', label: 'php', labelColor: 'blue', subTitle: 'something', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ', date: '13-05-2021'},
