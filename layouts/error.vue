@@ -4,7 +4,7 @@
       <NotFoundComponent />
     </div>
     <div v-else>
-      <UnknownErrorComponent :error='error' />
+      <UnknownErrorComponent :error="error" />
     </div>
   </div>
 </template>
@@ -15,13 +15,14 @@ import UnknownErrorComponent from '~/components/error/UnknownErrorComponent'
 export default {
   name: 'ErrorLayout',
   components: { UnknownErrorComponent, NotFoundComponent },
-  props: ['error'],
-  layout: 'error',// you can set a custom layout for the error page
+  layout: 'error',
+  // eslint-disable-next-line vue/require-prop-types
+  props: ['error'], // you can set a custom layout for the error page
 
   head() {
     return {
       title: `Whoops, a ${this.error.statusCode} error `,
     }
-  }
+  },
 }
 </script>

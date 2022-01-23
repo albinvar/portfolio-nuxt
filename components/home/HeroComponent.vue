@@ -18,7 +18,9 @@
           <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span> .
           Nice to meet you.
         </h2>
-        <p class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp">
+        <p
+          class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
+        >
           A Higher Secondary Student having passion for Web Development &
           Ethical Hacking. I have pretty good exposure in Editorial Works
           Photography, Video Editing and so on
