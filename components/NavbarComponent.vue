@@ -8,7 +8,7 @@
     "
   >
     <div
-      class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+      class="rounded-lg shadow-md bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 overflow-hidden"
     >
       <div class="px-5 pt-4 flex items-center justify-between">
         <div>
@@ -30,7 +30,7 @@
         <div class="-mr-2">
           <button
             type="button"
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+            class="bg-white dark:bg-gray-700 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             @click="
               () => {
                 hideNavbar()
@@ -64,9 +64,9 @@
       >
         <NuxtLink
           :to="item.link"
-          class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 hover:bg-gray-50 dark:hover:text-gray-200 dark:hover:bg-gray-600"
           :class="{
-            'w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-100 hover:bg-gray-200':
+            'w-full px-5 py-3 text-center font-medium text-indigo-600 dark:text-indigo-300 bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-200':
               item.isMain,
           }"
           @click.native="
