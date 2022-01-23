@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-white dark:bg-gray-800 h-screen">
+  <div class="relative min-h-screen bg-white dark:bg-gray-800">
     <div class="mx-auto">
       <div
         class="relative z-10 pb-4 bg-white dark:bg-gray-900 sm:pb-16 md:pb-6 lg:w-full shadow-lg rounded-b-3xl animate__animated animate__slideInDown"
@@ -104,7 +104,6 @@
       </div>
     </div>
     <Nuxt />
-    <Footer />
   </div>
 </template>
 
