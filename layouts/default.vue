@@ -66,9 +66,9 @@
               >
                 <NuxtLink
                   :to="item.link"
-                  class="font-medium text-gray-500 dark:text-gray-100 hover:text-gray-900"
+                  class="font-medium text-gray-500 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-500"
                   :class="{
-                    'text-indigo-600 hover:text-indigo-500': item.isMain,
+                    'text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-600': item.isMain,
                   }"
                   >{{ item.name }}</NuxtLink
                 >
