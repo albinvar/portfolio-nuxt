@@ -1,10 +1,11 @@
 <template>
   <div>
     <section class="bg-white dark:bg-gray-800 py-3 lg:py-20">
-      <div class="flex items-end justify-center my-6" @click="animate">
+      <div class="flex items-end justify-center my-6">
         <img
+          @click="animate"
           :class="{ animate__jackInTheBox: animated }"
-          class="h-56 w-56 rounded-full shadow-lg animate__animated"
+          class="h-56 w-56 rounded-full shadow-lg animate__animated max-h-screen min-w-screen"
           oncontextmenu="return false"
           src="~/assets/images/me.webp"
           @animationend="animated = false"
@@ -148,8 +149,16 @@
       </div>
     </section>
     <section class="h-2/3 bg-gray-800 pattern py-20">
-      <div class="p-6 mx-auto text-center">
-        <h2 class="text-2xl font-semibold text-white">About Me</h2>
+      <div class="p-3 mx-auto text-center">
+        <h2 class="text-2xl mb-4 font-semibold text-white">About Me</h2>
+
+        <object
+          :data="DevicesSvg"
+          type="image/svg+xml"
+          class="py-6 mb-3 mx-auto max-w-xs"
+          data-aos="fade-up"
+        ></object>
+
         <p
           class="text-gray-400 mt-4 lg:px-16"
           data-aos="fade-up"
@@ -175,6 +184,7 @@ export default {
   data() {
     return {
       animated: true,
+      DevicesSvg: require('~/assets/illustrations/startup.svg'),
     }
   },
 

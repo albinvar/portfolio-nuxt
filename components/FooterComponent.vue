@@ -1,13 +1,15 @@
 <template>
   <div class="bg-gray-900 relative inset-x-0 bottom-0">
-    <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-      <div class="flex flex-col justify-between py-10 border-gray-800 sm:flex-row">
+    <div class="px-4 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="flex flex-wrap justify-between py-10 border-gray-800 flex-row">
+        <div class='w-full sm:max-s-sm text-center mx-0 sm:mx-auto'>
         <p class="text-sm my-1 text-gray-500">
           © Copyright {{currentDate.getFullYear()}} albinvar.in
         </p>
-        <p class="mx-2 my-1 text-sm text-gray-500">
+        <p class="text-sm my-1 text-gray-500">
           All rights reserved.
         </p>
+        </div>
         <div class="my-3 mx-auto flex flex-wrap items-center gap-x-6 justify-between">
           <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
