@@ -1,7 +1,8 @@
 <template>
+  <div>
   <main
     class="mx-auto max-w-7xl px-4 my-40 sm:px-6 md:my-52 lg:my-72 lg:px-8 xl:mt-28"
-  >
+    >
     <div class="text-center">
       <object
         :data="NotFoundSvg"
@@ -17,6 +18,7 @@
       </h5>
     </div>
   </main>
+  </div>
 </template>
 
 <script>

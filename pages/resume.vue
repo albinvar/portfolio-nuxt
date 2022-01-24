@@ -8,6 +8,7 @@
         :data="CoolProgrammerSvg"
         type="image/svg+xml"
         class="block md:hidden mx-auto my-20 w-64 max-h-screen"
+        data-aos="fade-left"
       ></object>
 
       <div class="flow-root">
@@ -90,16 +91,20 @@
         :data="CareerSvg"
         type="image/svg+xml"
         class="hidden md:block my-3 mx-auto md:my-40 max-w-sm"
+        data-aos="fade-left"
       ></object>
       <object
         :data="RocketSvg"
         type="image/svg+xml"
         class="hidden md:block my-3 mx-auto my-40 max-w-sm"
+        data-aos="fade-left"
+        data-aos-delay="300"
       ></object>
       <object
         :data="ChoicesSvg"
         type="image/svg+xml"
         class="block md:hidden my-3 mx-auto md:my-40 w-64 max-h-screen"
+        data-aos="fade-left"
       ></object>
     </div>
   </div>
