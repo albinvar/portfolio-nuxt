@@ -1,12 +1,13 @@
 <template>
   <div>
     <section class="bg-white dark:bg-gray-800 py-3 lg:py-20">
-      <div class="flex items-end justify-center my-6" @click="animate">
+      <div class="flex items-end justify-center my-6">
         <img
           :class="{ animate__jackInTheBox: animated }"
-          class="h-56 w-56 rounded-full shadow-lg animate__animated"
+          class="h-56 w-56 rounded-full shadow-lg animate__animated max-h-screen min-w-screen"
           oncontextmenu="return false"
           src="~/assets/images/me.webp"
+          @click="animate"
           @animationend="animated = false"
         />
       </div>
@@ -15,15 +16,17 @@
           class="text-3xl font-semibold text-gray-800 dark:text-gray-100 animate__animated animate__slideInLeft"
         >
           Hi,
-          <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span> .
-          Nice to meet you.
+          <span class="bg-indigo-600 text-white rounded px-1"
+            >I’m Albin Varghese</span
+          >
+          . Nice to meet you.
         </h2>
         <p
           class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
         >
-          A Higher Secondary Student having passion for Web Development &
-          Ethical Hacking. I have pretty good exposure in Editorial Works
-          Photography, Video Editing and so on
+          A CS undergraduate having passion for Web Development & Ethical
+          Hacking as well as experience in Editorial Works Photography, Video
+          Editing and so on...
         </p>
       </div>
       <div
@@ -148,22 +151,51 @@
       </div>
     </section>
     <section class="h-2/3 bg-gray-800 pattern py-20">
-      <div class="p-6 mx-auto text-center">
-        <h2 class="text-2xl font-semibold text-white">About Me</h2>
-        <p
-          class="text-gray-400 mt-4 lg:px-16"
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-center"
-        >
-          Hello! I'm Albin Varghese a Higher Secondary Student having passion
-          for Web Development & Ethical Hacking. I have pretty good exposure in
-          Editorial Works Photography, Video Editing and so on
-        </p>
+      <div class="flex flex-wrap p-3">
+        <div class="w-full md:w-1/2">
+          <h2
+            class="text-2xl mb-6 md:mb-10 font-semibold text-white text-center"
+          >
+            About Me
+          </h2>
+          <object
+            :data="DevicesSvg"
+            type="image/svg+xml"
+            class="py-6 mb-3 mx-auto max-w-xs md:max-w-sm"
+            data-aos="fade-up"
+          ></object>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <p
+            class="text-gray-300 mt-4 lg:px-16 px-3 text-center"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            aliquet lobortis felis, suscipit euismod ex. Curabitur varius ex
+            eros, vel viverra odio congue sit amet. In hendrerit sed nibh et
+            pretium. Duis vel ornare arcu. Vestibulum ac suscipit nisl, a
+            volutpat nulla. Donec vitae urna egestas, lacinia nunc vel, mollis
+            dui. Pellentesque blandit rutrum libero sed egestas. Etiam a purus
+            porta, suscipit massa ut, bibendum velit. Integer sit amet risus
+            massa. Ut pharetra magna in velit posuere eleifend. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Proin maximus eget lacus in blandit. Integer ac
+            accumsan est, sed bibendum turpis. Nulla condimentum nulla nisi, in
+            accumsan dui fringilla sed. Mauris non pellentesque odio. Ut
+            elementum nibh sed odio viverra sodales. Vivamus lacinia nisi at
+            nibh dictum sollicitudin. Sed ornare imperdiet elementum. Praesent
+            cursus dolor tempor porttitor tincidunt. Morbi quis eros lectus.
+            Donec commodo tristique purus nec consectetur. Vivamus euismod
+            vehicula rhoncus. Sed imperdiet sed dolor a tincidunt.
+          </p>
+        </div>
       </div>
     </section>
   </div>
@@ -175,6 +207,7 @@ export default {
   data() {
     return {
       animated: true,
+      DevicesSvg: require('~/assets/illustrations/programming.svg'),
     }
   },
 

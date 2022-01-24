@@ -1,6 +1,20 @@
 <template>
   <div class="mx-4 flex flex-wrap">
-    <div class="lg:w-1/2 text-left p-8">
+    <div class="w-1/6">
+      <h1
+        class="my-6 mx-8 text-3xl text-gray-700 dark:text-gray-200 font-semibold"
+      >
+        Resume
+      </h1>
+    </div>
+    <div class="lg:w-1/3 text-left p-8">
+      <object
+        :data="CoolProgrammerSvg"
+        type="image/svg+xml"
+        class="block md:hidden mx-auto my-20 w-64 max-h-screen"
+        data-aos="fade-left"
+      ></object>
+
       <div class="flow-root">
         <ul class="mb-8">
           <li v-for="event in timelineEvents" :key="event.id">
@@ -80,12 +94,21 @@
       <object
         :data="CareerSvg"
         type="image/svg+xml"
-        class="my-3 mx-auto my-8 md:my-40 max-w-sm"
+        class="hidden md:block my-3 mx-auto md:my-40 max-w-sm"
+        data-aos="fade-left"
       ></object>
       <object
         :data="RocketSvg"
         type="image/svg+xml"
         class="hidden md:block my-3 mx-auto my-40 max-w-sm"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      ></object>
+      <object
+        :data="ChoicesSvg"
+        type="image/svg+xml"
+        class="block md:hidden my-3 mx-auto md:my-40 w-64 max-h-screen"
+        data-aos="fade-left"
       ></object>
     </div>
   </div>
@@ -96,6 +119,8 @@ export default {
   data() {
     return {
       CareerSvg: require('~/assets/illustrations/progress.svg'),
+      CoolProgrammerSvg: require('~/assets/illustrations/cool_programmer.svg'),
+      ChoicesSvg: require('~/assets/illustrations/choices.svg'),
       RocketSvg: require('~/assets/illustrations/404.svg'),
       timelineEvents: [
         {
