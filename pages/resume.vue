@@ -1,7 +1,11 @@
 <template>
   <div class="mx-4 flex flex-wrap">
-    <div class='w-1/6'>
-      <h1 class="my-6 mx-8 text-3xl text-gray-700 dark:text-gray-200 font-semibold">Resume</h1>
+    <div class="w-1/6">
+      <h1
+        class="my-6 mx-8 text-3xl text-gray-700 dark:text-gray-200 font-semibold"
+      >
+        Resume
+      </h1>
     </div>
     <div class="lg:w-1/3 text-left p-8">
       <object

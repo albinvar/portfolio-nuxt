@@ -2,9 +2,13 @@
   <ol
     vocab="http://schema.org/"
     typeof="BreadcrumbList"
-    class='flex flex-row flex-nowrap text-sm'
+    class="flex flex-row flex-nowrap text-sm"
   >
-    <li property="itemListElement" typeof="ListItem" class='text-gray-700 dark:text-gray-300'>
+    <li
+      property="itemListElement"
+      typeof="ListItem"
+      class="text-gray-700 dark:text-gray-300"
+    >
       <NLink property="item" typeof="WebPage" to="/">
         <span property="name">albinvar.in</span>
       </NLink>
@@ -21,8 +25,8 @@
 
       <NLink property="item" typeof="WebPage" :to="crumb.path">
         <span class="text-md" property="name">{{
-            $route.fullPath === crumb.path && title !== null ? title : crumb.title
-          }}</span>
+          $route.fullPath === crumb.path && title !== null ? title : crumb.title
+        }}</span>
       </NLink>
       <meta property="position" :content="index + 2" />
     </li>
@@ -60,4 +64,3 @@ export default {
   },
 }
 </script>
-
