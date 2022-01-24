@@ -100,14 +100,17 @@
       </div>
     </div>
     <Nuxt />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import FooterComponent from '~/components/FooterComponent'
 
 export default {
   name: 'App',
+  components: { FooterComponent },
   data() {
     return {
       // navbarStatus: this.$store.state.navbarStatus,
