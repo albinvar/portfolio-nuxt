@@ -180,6 +180,6 @@ export default {
     return {
       title: 'Resume | Albin Varghese',
     }
-  }
+  },
 }
 </script>
