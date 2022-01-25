@@ -11,7 +11,7 @@
       <object
         :data="CoolProgrammerSvg"
         type="image/svg+xml"
-        class="block md:hidden mx-auto my-20 w-64 max-h-screen"
+        class="block md:hidden mx-auto my-20 w-56 max-h-screen"
         data-aos="fade-left"
       ></object>
 
@@ -94,20 +94,20 @@
       <object
         :data="CareerSvg"
         type="image/svg+xml"
-        class="hidden md:block my-3 mx-auto md:my-40 max-w-sm"
+        class="hidden md:block my-3 mx-auto md:my-40 max-w-xs"
         data-aos="fade-left"
       ></object>
       <object
         :data="RocketSvg"
         type="image/svg+xml"
-        class="hidden md:block my-3 mx-auto my-40 max-w-sm"
+        class="hidden md:block my-3 mx-auto my-40 max-w-xs"
         data-aos="fade-left"
         data-aos-delay="300"
       ></object>
       <object
         :data="ChoicesSvg"
         type="image/svg+xml"
-        class="block md:hidden my-3 mx-auto md:my-40 w-64 max-h-screen"
+        class="block md:hidden my-3 mx-auto md:my-40 w-56 max-h-screen"
         data-aos="fade-left"
       ></object>
     </div>
