@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <div id='hero'>
     <section class="bg-white dark:bg-gray-800 py-3 lg:py-20">
       <div class="flex items-end justify-center my-6">
         <img
           :class="{ animate__jackInTheBox: animated }"
-          class="h-56 w-56 rounded-full shadow-lg animate__animated max-h-screen min-w-screen"
+          class="h-52 w-52 rounded-full shadow-lg animate__animated max-h-screen min-w-screen cursor-pointer"
           oncontextmenu="return false"
           src="~/assets/images/me.webp"
+          height='448'
+          width='448'
+          alt='Albin Varghese'
           @click="animate"
           @animationend="animated = false"
         />
@@ -15,11 +18,11 @@
         <h2
           class="text-3xl font-semibold text-gray-800 dark:text-gray-100 animate__animated animate__slideInLeft"
         >
-          Hi,
+          Hey,
           <span class="bg-indigo-600 text-white rounded px-1"
             >I’m Albin Varghese</span
           >
-          . Nice to meet you.
+           Nice to meet you.
         </h2>
         <p
           class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
@@ -35,8 +38,8 @@
       >
         <a
           class="link"
-          href="https://www.facebook.com/albin.varghese.395017"
-          data-tippy-content="@albin.varghese.395017"
+          href="https://www.facebook.com/albinvar.dev" target='_blank'
+          data-tippy-content="@albinvar.dev"
         >
           <svg
             class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
@@ -52,8 +55,8 @@
         </a>
         <a
           class="link"
-          href="https://mobile.twitter.com/AlbinVa73331234"
-          data-tippy-content="@AlbinVa73331234"
+          href="https://twitter.com/albin_var" target='_blank'
+          data-tippy-content="@albin_var"
         >
           <svg
             class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
@@ -69,7 +72,7 @@
         </a>
         <a
           class="link"
-          href="https://github.com/albinvar"
+          href="https://github.com/albinvar" target='_blank'
           data-tippy-content="@albinvar"
         >
           <svg
@@ -86,7 +89,7 @@
         </a>
         <a
           class="link"
-          href="https://unsplash.com/@albinvar"
+          href="https://unsplash.com/@albinvar" target='_blank'
           data-tippy-content="@albinvar"
         >
           <svg
@@ -103,7 +106,7 @@
         </a>
         <a
           class="link"
-          href="https://dribbble.com/albinvar"
+          href="https://dribbble.com/albinvar" target='_blank'
           data-tippy-content="@albinvar"
         >
           <svg
@@ -112,7 +115,7 @@
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Dribbble</title>
+            <title>Dribble</title>
             <path
               d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"
             />
@@ -120,8 +123,8 @@
         </a>
         <a
           class="link"
-          href="https://www.instagram.com/android_exploiter/"
-          data-tippy-content="@android_exploiter"
+          href="https://www.instagram.com/albin_var/" target='_blank'
+          data-tippy-content="@albin_var"
         >
           <svg
             class="h-6 fill-current text-gray-600 hover:text-indigo-500 dark:text-gray-100 dark:hover:text-indigo-400"
@@ -162,6 +165,7 @@
             :data="DevicesSvg"
             type="image/svg+xml"
             class="py-6 mb-3 mx-auto max-w-xs md:max-w-sm"
+            aria-label="Working Programmer"
             data-aos="fade-up"
           ></object>
         </div>
@@ -220,8 +224,17 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
+#hero {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+img {
+  -webkit-user-drag: none;
+}
+
+.fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {

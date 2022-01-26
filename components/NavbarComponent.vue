@@ -22,8 +22,10 @@
           >
             <img
               class="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt=""
+              src="~/static/workflow.svg"
+              alt="logo"
+              height="2.5rem"
+              width="2.5rem"
             />
           </NuxtLink>
         </div>

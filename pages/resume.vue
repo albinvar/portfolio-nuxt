@@ -11,7 +11,7 @@
       <object
         :data="CoolProgrammerSvg"
         type="image/svg+xml"
-        class="block md:hidden mx-auto my-20 w-56 max-h-screen"
+        class="block md:hidden mx-auto my-20 w-48 max-h-screen"
         data-aos="fade-left"
       ></object>
 
@@ -107,7 +107,7 @@
       <object
         :data="ChoicesSvg"
         type="image/svg+xml"
-        class="block md:hidden my-3 mx-auto md:my-40 w-56 max-h-screen"
+        class="block md:hidden my-3 mx-auto md:my-40 w-48 max-h-screen"
         data-aos="fade-left"
       ></object>
     </div>
