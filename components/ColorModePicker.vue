@@ -1,25 +1,9 @@
 <template>
-  <div>
-    <!--    <ul>-->
-    <!--      <li v-for="color of colors" :key="color" @click="$colorMode.preference = color">-->
-    <!--        <component-->
-    <!--          class='hidden'-->
-    <!--          :is="`icon-${color}`"-->
-    <!--          @click="$colorMode.preference = color"-->
-    <!--          :class="getClasses(color)"-->
-    <!--        />-->
-    <!--      </li>-->
-    <!--    </ul>-->
-    <!--    <ColorScheme placeholder="..." tag="span">-->
-    <!--      Color mode: <b>{{ $colorMode.preference }}</b>-->
-    <!--      <span v-if="$colorMode.preference === 'system'"-->
-    <!--      >(<i>{{ $colorMode.value }}</i> mode detected)</span-->
-    <!--      >-->
-    <!--    </ColorScheme>-->
+  <div class='cursor-pointer'>
     <div v-if="$colorMode.preference === `system`">
       <component
         :is="`icon-system`"
-        class="w-6 h-6 text-green-400 rounded-md inline-flex items-center justify-center"
+        class="w-6 h-6 text-green-400 rounded-md inline-flex items-center justify-center "
         :class="getClasses('dark')"
         @click="$colorMode.preference = 'dark'"
       />

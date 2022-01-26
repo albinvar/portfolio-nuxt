@@ -16,12 +16,14 @@
                     <span class="sr-only">Workflow</span>
                     <img
                       class="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src="/workflow.svg"
                       alt="logo"
+                      height="2.5rem"
+                      width="2.5rem"
                     />
                   </NuxtLink>
                   <span
-                    class="lg:pl-4 text-xl text-gray-500 dark:text-gray-200 font-bold animate__animated animate__jackInTheBox animate__delay-1s"
+                    class="lg:pl-4 text-xl text-gray-500 dark:text-gray-200 font-bold"
                     >Albin Varghese</span
                   >
 
@@ -68,7 +70,7 @@
                   :to="item.link"
                   class="font-medium text-gray-500 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-500"
                   :class="{
-                    'text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-600':
+                    'text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-500':
                       item.isMain,
                   }"
                   >{{ item.name }}</NuxtLink
@@ -78,16 +80,6 @@
               <ColorModePicker class="hidden md:block ml-4" />
             </nav>
           </div>
-
-          <!--
-            Mobile menu, show/hide based on menu open state.
-            Entering: "duration-150 ease-out"
-              From: "opacity-0 scale-95"
-              To: "opacity-100 scale-100"
-            Leaving: "duration-100 ease-in"
-              From: "opacity-100 scale-100"
-              To: "opacity-0 scale-95"
-          -->
           <transition
             name="fade"
             enter-from-class="opacity-0 scale-95"
@@ -128,7 +120,7 @@ export default {
 }
 </script>
 <style>
-app {
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -7,16 +7,16 @@
         class="flex flex-wrap justify-between py-10 border-gray-800 flex-row"
       >
         <div class="w-full sm:max-s-sm text-center mx-0 sm:mx-auto">
-          <p class="text-sm my-1 text-gray-500">
+          <p class="text-sm my-1 text-gray-300 font-bold">
             © Copyright {{ currentDate.getFullYear() }} albinvar.in
           </p>
-          <p class="text-sm my-1 text-gray-500">All rights reserved.</p>
+          <p class="text-sm my-1 text-gray-300">All rights reserved.</p>
         </div>
         <div
           class="my-3 mx-auto flex flex-wrap items-center gap-x-6 justify-between"
         >
           <a
-            href="/"
+            href="https://twitter.com/albin_var" target='_blank'
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -26,7 +26,7 @@
             </svg>
           </a>
           <a
-            href="/"
+            href="https://instagram.com/albin_var" target='_blank'
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
@@ -37,7 +37,7 @@
             </svg>
           </a>
           <a
-            href="/"
+            href="https://www.facebook.com/albinvar.dev" target='_blank'
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
