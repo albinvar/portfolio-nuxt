@@ -4,12 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Albin Varghese',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A motivated computer science under-graduate with 3+ years of experience in full-stack web development and ethical hacking' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'theme_color', content: '#284AFF'},
+      { name: 'author', content: 'Albin Varghese'},
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -52,7 +54,9 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en',
+      name: 'Albin Varghese',
+      short_name: 'Albin Varghese',
+      lang: 'en'
     },
   },
 

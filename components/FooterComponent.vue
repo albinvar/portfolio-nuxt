@@ -10,7 +10,7 @@
           <p class="text-sm my-1 text-gray-300 font-bold">
             © Copyright {{ currentDate.getFullYear() }} albinvar.in
           </p>
-          <p class="text-sm my-1 text-gray-400">All rights reserved.</p>
+          <p class="text-sm my-1 text-gray-300">All rights reserved.</p>
         </div>
         <div
           class="my-3 mx-auto flex flex-wrap items-center gap-x-6 justify-between"

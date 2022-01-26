@@ -27,9 +27,8 @@
         <p
           class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
         >
-          A CS undergraduate having passion for Web Development & Ethical
-          Hacking as well as experience in Editorial Works Photography, Video
-          Editing and so on...
+          A motivated computer science under-graduate with 3+ years of experience
+          in full-stack web development and ethical hacking.
         </p>
       </div>
       <div

@@ -22,7 +22,7 @@
           >
             <img
               class="h-8 w-auto"
-              src="~/static/workflow.svg"
+              src="/workflow.svg"
               alt="logo"
               height="2.5rem"
               width="2.5rem"

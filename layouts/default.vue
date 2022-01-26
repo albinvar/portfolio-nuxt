@@ -16,7 +16,7 @@
                     <span class="sr-only">Workflow</span>
                     <img
                       class="h-8 w-auto sm:h-10"
-                      src="~/static/workflow.svg"
+                      src="/workflow.svg"
                       alt="logo"
                       height="2.5rem"
                       width="2.5rem"
@@ -70,7 +70,7 @@
                   :to="item.link"
                   class="font-medium text-gray-500 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-500"
                   :class="{
-                    'text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-600':
+                    'text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-500':
                       item.isMain,
                   }"
                   >{{ item.name }}</NuxtLink
