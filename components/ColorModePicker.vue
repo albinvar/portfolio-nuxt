@@ -1,9 +1,9 @@
 <template>
-  <div class='cursor-pointer'>
+  <div class="cursor-pointer">
     <div v-if="$colorMode.preference === `system`">
       <component
         :is="`icon-system`"
-        class="w-6 h-6 text-green-400 rounded-md inline-flex items-center justify-center "
+        class="w-6 h-6 text-green-400 rounded-md inline-flex items-center justify-center"
         :class="getClasses('dark')"
         @click="$colorMode.preference = 'dark'"
       />

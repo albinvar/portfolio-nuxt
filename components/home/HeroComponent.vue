@@ -1,5 +1,5 @@
 <template>
-  <div id='hero'>
+  <div id="hero">
     <section class="bg-white dark:bg-gray-800 py-3 lg:py-20">
       <div class="flex items-end justify-center my-6">
         <img
@@ -7,9 +7,9 @@
           class="h-52 w-52 rounded-full shadow-lg animate__animated max-h-screen min-w-screen cursor-pointer"
           oncontextmenu="return false"
           src="~/assets/images/me.webp"
-          height='448'
-          width='448'
-          alt='Albin Varghese'
+          height="448"
+          width="448"
+          alt="Albin Varghese"
           @click="animate"
           @animationend="animated = false"
         />
@@ -19,16 +19,14 @@
           class="text-3xl font-semibold text-gray-800 dark:text-gray-100 animate__animated animate__slideInLeft"
         >
           Hey,
-          <span class="bg-indigo-600 text-white rounded px-1"
-            >I’m Albin</span
-          >
-           . Nice to meet you.
+          <span class="bg-indigo-600 text-white rounded px-1">I’m Albin</span>
+          . Nice to meet you.
         </h2>
         <p
           class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
         >
-          A motivated computer science under-graduate with 3+ years of experience
-          in full-stack web development and ethical hacking.
+          A motivated computer science under-graduate with 3+ years of
+          experience in full-stack web development and ethical hacking.
         </p>
       </div>
       <div
@@ -37,7 +35,8 @@
       >
         <a
           class="link"
-          href="https://www.facebook.com/albinvar.dev" target='_blank'
+          href="https://www.facebook.com/albinvar.dev"
+          target="_blank"
           data-tippy-content="@albinvar.dev"
         >
           <svg
@@ -54,7 +53,8 @@
         </a>
         <a
           class="link"
-          href="https://twitter.com/albin_var" target='_blank'
+          href="https://twitter.com/albin_var"
+          target="_blank"
           data-tippy-content="@albin_var"
         >
           <svg
@@ -71,7 +71,8 @@
         </a>
         <a
           class="link"
-          href="https://github.com/albinvar" target='_blank'
+          href="https://github.com/albinvar"
+          target="_blank"
           data-tippy-content="@albinvar"
         >
           <svg
@@ -88,7 +89,8 @@
         </a>
         <a
           class="link"
-          href="https://unsplash.com/@albinvar" target='_blank'
+          href="https://unsplash.com/@albinvar"
+          target="_blank"
           data-tippy-content="@albinvar"
         >
           <svg
@@ -105,7 +107,8 @@
         </a>
         <a
           class="link"
-          href="https://dribbble.com/albinvar" target='_blank'
+          href="https://dribbble.com/albinvar"
+          target="_blank"
           data-tippy-content="@albinvar"
         >
           <svg
@@ -122,7 +125,8 @@
         </a>
         <a
           class="link"
-          href="https://www.instagram.com/albin_var/" target='_blank'
+          href="https://www.instagram.com/albin_var/"
+          target="_blank"
           data-tippy-content="@albin_var"
         >
           <svg
@@ -227,13 +231,14 @@ export default {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-   user-select: none;
+  user-select: none;
 }
 img {
   -webkit-user-drag: none;
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
