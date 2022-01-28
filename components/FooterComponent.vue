@@ -16,7 +16,8 @@
           class="my-3 mx-auto flex flex-wrap items-center gap-x-6 justify-between"
         >
           <a
-            href="https://twitter.com/albin_var" target='_blank'
+            href="https://twitter.com/albin_var"
+            target="_blank"
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -26,7 +27,8 @@
             </svg>
           </a>
           <a
-            href="https://instagram.com/albin_var" target='_blank'
+            href="https://instagram.com/albin_var"
+            target="_blank"
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
@@ -37,7 +39,8 @@
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/albinvar.dev" target='_blank'
+            href="https://www.facebook.com/albinvar.dev"
+            target="_blank"
             class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">

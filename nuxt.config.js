@@ -8,12 +8,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A motivated computer science under-graduate with 3+ years of experience in full-stack web development and ethical hacking' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'A motivated computer science under-graduate with 3+ years of experience in full-stack web development and ethical hacking',
+      },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: 'theme_color', content: '#284AFF'},
-      { name: 'author', content: 'Albin Varghese'},
+      { name: 'theme_color', content: '#284AFF' },
+      { name: 'author', content: 'Albin Varghese' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -56,7 +61,9 @@ export default {
     manifest: {
       name: 'Albin Varghese',
       short_name: 'Albin Varghese',
-      lang: 'en'
+      lang: 'en',
+      theme_color: '#284AFF',
+      background_color: '#284AFF',
     },
   },
 
