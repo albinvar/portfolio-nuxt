@@ -110,7 +110,7 @@ export default {
 
   head() {
     return {
-      title: 'Followers | Albin Varghese',
+      title: 'Blog | Albin Varghese',
     }
   },
 }
