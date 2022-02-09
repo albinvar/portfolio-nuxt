@@ -6,27 +6,27 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://albinvar.vercel.app</loc>
+    <loc>https://albinvar.in</loc>
     <lastmod>2022-01-28T02:53:42+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://albinvar.vercel.app/contact</loc>
+    <loc>https://albinvar.in/contact</loc>
     <lastmod>2022-01-28T02:53:42+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://albinvar.vercel.app/resume</loc>
+    <loc>https://albinvar.in/resume</loc>
     <lastmod>2022-01-28T02:53:42+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://albinvar.vercel.app/followers</loc>
+    <loc>https://albinvar.in/followers</loc>
     <lastmod>2022-01-28T02:53:42+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://albinvar.vercel.app/blog</loc>
+    <loc>https://albinvar.in/blog</loc>
     <lastmod>2022-01-28T02:53:42+00:00</lastmod>
     <priority>0.80</priority>
   </url>
