@@ -4,7 +4,7 @@
       <div class="flex items-end justify-center my-6">
         <img
           :class="{ animate__jackInTheBox: animated }"
-          class="h-52 w-52 rounded-full shadow-lg animate__animated max-h-screen min-w-screen cursor-pointer"
+          class="h-52 w-52 rounded-full shadow-lg animate__animated max-h-screen min-w-screen"
           oncontextmenu="return false"
           src="~/assets/images/me.webp"
           height="448"
