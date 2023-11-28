@@ -17,7 +17,13 @@
 
       <div class="flow-root">
         <ul class="mb-8">
-          <li v-for="event in timelineEvents" :key="event.id">
+          <li
+            v-for="event in timelineEvents.sort((a, b) => {
+              // Sort in descending order based on 'id'
+              return b.id - a.id
+            })"
+            :key="event.id"
+          >
             <div class="relative pb-8" data-aos="fade-right">
               <span
                 class="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
@@ -125,53 +131,129 @@ export default {
       timelineEvents: [
         {
           id: 1,
-          title: 'Started learning PHP',
-          label: 'php',
+          title: 'Learned PHP Programming Language',
+          label: 'PHP',
           labelColor: 'blue',
-          subTitle: 'something',
+          subTitle: 'Start of PHP Journey',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ',
-          date: '13-05-2021',
+            'Started my programming journey by diving into the PHP language, exploring its syntax, functionalities, and its application in web development.',
         },
         {
           id: 2,
-          title: 'Started learning Node Js',
-          label: 'php',
-          labelColor: 'blue',
-          subTitle: 'something',
+          title: 'Simple QR Code Generator',
+          label: 'Open Source',
+          labelColor: 'green',
+          subTitle: 'First Open Source Project',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ',
-          date: '13-05-2021',
+            'Developed a simple yet functional QR code generator project. This open-source project allowed users to create QR codes with ease. It was a great opportunity to delve into PHP programming and contribute to the open-source community.',
         },
         {
           id: 3,
-          title: 'Started learning  Python',
-          label: 'php',
-          labelColor: 'blue',
-          subTitle: 'something',
+          title: 'AnonFiles Uploader',
+          label: 'Open Source',
+          labelColor: 'green',
+          subTitle: 'Web Uploader Interface',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ',
-          date: '13-05-2021',
+            'Created a web uploader interface using the AnonFiles API. This project aimed to simplify file uploads using a user-friendly web interface connected with AnonFiles, providing an efficient file-sharing solution for users.',
         },
         {
           id: 4,
-          title: 'Started learning Css',
-          label: 'php',
-          labelColor: 'blue',
-          subTitle: 'something',
+          title: 'Github Telegram Bot',
+          label: 'Open Source',
+          labelColor: 'green',
+          subTitle: 'GitHub Notifications to Telegram',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ',
-          date: '13-05-2021',
+            "Developed a bot that sends GitHub notifications directly to users' Telegram accounts. This bot facilitated quick and convenient access to GitHub updates, enhancing user experience and productivity.",
         },
         {
           id: 5,
-          title: 'Started learning Sass',
-          label: 'php',
-          labelColor: 'blue',
-          subTitle: 'something',
+          title: 'Paid ERP Solution for Church Management (SJC Vaipur)',
+          label: 'Project Development',
+          labelColor: 'orange',
+          subTitle: 'Church ERP System',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquam orci eu magna sodales, in luctus dolor semper. Maecenas dignissim velit non fermentum sodales. Nulla sed orci neque. Pellentesque ac rutrum mauris. Nulla at magna id metus eleifend molestie. Cras blandit eleifend iaculis. ',
-          date: '13-05-2021',
+            'Initiated the development of a paid ERP solution tailored for church management at SJC Vaipur. This comprehensive system aimed to streamline administrative tasks and facilitate smooth operations within the church community.',
+        },
+        {
+          id: 6,
+          title: 'Online Holy Mass Booking System',
+          label: 'Project Development',
+          labelColor: 'orange',
+          subTitle: 'COVID-19 Initiative',
+          description:
+            'Developed an online system for booking holy masses, specifically designed to help control and manage parishioner attendance during the COVID-19 pandemic. The successful implementation of this system resulted in its adoption by more than four churches, ensuring safe and organized participation in religious services.',
+        },
+        {
+          id: 7,
+          title: 'Termux Webzone',
+          label: 'Tool Development',
+          labelColor: 'purple',
+          subTitle: 'CLI Application for Web Developers',
+          description:
+            'Built a robust Command Line Interface (CLI) application tailored for web developers to create, run, and test PHP applications within the confines of Android using Termux. This application aimed to provide a comprehensive toolkit for developers working on-the-go.',
+        },
+        {
+          id: 8,
+          title: 'AnonFiles CLI',
+          label: 'Tool Development',
+          labelColor: 'purple',
+          subTitle: 'Console Application for AnonFiles API',
+          description:
+            'Developed a console application using PHP to facilitate file uploads and downloads via the AnonFiles API directly from the terminal. This command-line tool empowered users to efficiently manage their files with the AnonFiles service in a command-based environment.',
+        },
+        {
+          id: 9,
+          title: 'Simple Social Media Project',
+          label: 'Project Development',
+          labelColor: 'orange',
+          subTitle: 'Laravel and Livewire Experiment',
+          description:
+            'Experimented with Laravel and Livewire to create a simplified version of a social media platform resembling Instagram. This project was aimed at exploring the functionalities of these technologies and gaining hands-on experience in developing social media platforms.',
+        },
+        {
+          id: 10,
+          title: 'Participation in Evolhack 2023 Hackathon',
+          label: 'Hackathon',
+          labelColor: 'red',
+          subTitle: 'Innovative Problem-Solving',
+          description:
+            'Engaged in the Evolhack 2023 Hackathon, participating in a collaborative environment aimed at solving innovative challenges. This hackathon provided an excellent platform to brainstorm creative solutions and network with like-minded individuals.',
+        },
+        {
+          id: 11,
+          title: 'Initiated Wexron Hosting',
+          label: 'Entrepreneurship',
+          labelColor: 'yellow',
+          subTitle: 'Web Hosting Startup',
+          description:
+            'Founded Wexron Hosting, a startup dedicated to providing high-quality web hosting services at competitive rates. The venture aimed to offer reliable and efficient web hosting solutions while prioritizing affordability for users.',
+        },
+        {
+          id: 12,
+          title: 'Contributed to FOSSBilling',
+          label: 'Open Source Contribution',
+          labelColor: 'green',
+          subTitle: 'Contribution to Open Source Software',
+          description:
+            'Contributed to FOSSBilling, an open-source software project, by providing code enhancements, bug fixes, and feature implementations. This involvement aimed to support and improve the functionalities of the billing software for its user community.',
+        },
+        {
+          id: 13,
+          title: 'Razorpay Payment Module for FOSSBilling',
+          label: 'Open Source Development',
+          labelColor: 'green',
+          subTitle: 'Integration with FOSSBilling',
+          description:
+            "Created a payment gateway module for FOSSBilling utilizing the Razorpay platform. This module enabled seamless integration of Razorpay's payment services within the FOSSBilling ecosystem, enhancing its functionalities for users.",
+        },
+        {
+          id: 14,
+          title: 'Smart Lock Prototype Development',
+          label: 'Prototyping',
+          labelColor: 'purple',
+          subTitle: 'Security Innovation',
+          description:
+            'Prototyped a sophisticated smart lock system that allowed authentication through facial recognition, card access, and website/app control. This prototype aimed to revolutionize security measures by providing multiple authentication methods for access control.',
         },
       ],
     }

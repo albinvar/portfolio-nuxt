@@ -103,9 +103,9 @@ export default {
   },
 
   async fetch() {
-    this.posts = await fetch('https://api.nuxtjs.dev/posts').then((res) =>
-      res.json()
-    )
+    this.posts = await fetch(
+      'https://api.slingacademy.com/v1/sample-data/blog-posts'
+    ).then((res) => res.json())
   },
 
   head() {
