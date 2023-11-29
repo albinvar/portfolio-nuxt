@@ -124,7 +124,7 @@ export default {
 
   async fetch() {
     this.followers = await fetch(
-      'https://api.github.com/users/albinvar/followers'
+      'https://api.github.com/users/albinvar/followers?per_page=100'
     ).then((res) => res.json())
   },
   head() {

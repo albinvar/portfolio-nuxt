@@ -25,8 +25,8 @@
         <p
           class="text-gray-600 dark:text-gray-200 mt-4 animate__animated animate__fadeInUp"
         >
-          A motivated computer science under-graduate with 3+ years of
-          experience in full-stack web development and ethical hacking.
+          Eager Computer Science Student | 3+ Years Experience in Full-Stack Web
+          Development and Ethical Hacking
         </p>
       </div>
       <div
@@ -184,23 +184,13 @@
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            aliquet lobortis felis, suscipit euismod ex. Curabitur varius ex
-            eros, vel viverra odio congue sit amet. In hendrerit sed nibh et
-            pretium. Duis vel ornare arcu. Vestibulum ac suscipit nisl, a
-            volutpat nulla. Donec vitae urna egestas, lacinia nunc vel, mollis
-            dui. Pellentesque blandit rutrum libero sed egestas. Etiam a purus
-            porta, suscipit massa ut, bibendum velit. Integer sit amet risus
-            massa. Ut pharetra magna in velit posuere eleifend. Orci varius
-            natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Proin maximus eget lacus in blandit. Integer ac
-            accumsan est, sed bibendum turpis. Nulla condimentum nulla nisi, in
-            accumsan dui fringilla sed. Mauris non pellentesque odio. Ut
-            elementum nibh sed odio viverra sodales. Vivamus lacinia nisi at
-            nibh dictum sollicitudin. Sed ornare imperdiet elementum. Praesent
-            cursus dolor tempor porttitor tincidunt. Morbi quis eros lectus.
-            Donec commodo tristique purus nec consectetur. Vivamus euismod
-            vehicula rhoncus. Sed imperdiet sed dolor a tincidunt.
+            Hey there! I'm a passionate computer science student diving into the
+            tech world with over three years of experience. I've been busy
+            crafting websites from start to finish and exploring ethical
+            hacking. I love making websites that look great and work smoothly.
+            But I'm not just about building; I'm also into ethical hacking,
+            making sure systems stay safe and secure. Let's team up and explore
+            the exciting realms where coding and security blend seamlessly.
           </p>
         </div>
       </div>
