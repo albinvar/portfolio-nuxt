@@ -18,7 +18,7 @@
       <div class="flow-root">
         <ul class="mb-8">
           <li
-            v-for="event in timelineEvents.sort((a, b) => {
+            v-for="event in [...timelineEvents].sort((a, b) => {
               // Sort in descending order based on 'id'
               return b.id - a.id
             })"
