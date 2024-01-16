@@ -103,6 +103,18 @@ import FooterComponent from '~/components/FooterComponent'
 
 export default {
   name: 'App',
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'onion-location',
+          name: 'onion-location',
+          content:
+            'http://albinvar562qxypirpahxburwrngum64qwm7sd5hpgiwzyi64ikfaaid.onion',
+        },
+      ],
+    }
+  },
   components: { FooterComponent },
   data() {
     return {
